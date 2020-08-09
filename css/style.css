@@ -108,6 +108,33 @@ hr.divider {
     background:repeating-linear-gradient(to right, #aeccf3d5, #d4eeffd3),
      url("https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
      background-position: center;
-     
-   
+      
+}
+
+
+/*Pagination*/
+div.page-hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, #d8bada8e,#130e1285), 
+                url("https://images.pexels.com/photos/3830745/pexels-photo-3830745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pagination-caption{
+    
+    background-color: rgba(0, 0, 0, 0.473);
+    box-shadow:8px 10px 10px rgba(0, 0, 0, 0.774) ;
+}
+.table-dark{
+    border: 1px solid rgba(0, 0, 0, .11);
+    padding: 10px;
+}
+
+.controls-item {
+    display: inline-block;
+}
+
+.btn {
+    margin: -2px;
 }
