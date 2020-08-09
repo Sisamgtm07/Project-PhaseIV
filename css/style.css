@@ -76,11 +76,16 @@ body{
     background-image: repeating-linear-gradient(to right, #206DD4, #0099ff5b);
 }
 
+.font-weight-bold.forgot {
+    font-weight: 700!important;
+    font-size: 10px;
+}
+
 
 
 /*About Us*/
 .main_heading,
-.quality-section{
+.channel-section{
     background: #d1cde934;
 }
 
@@ -97,4 +102,12 @@ hr.divider {
 /*Quality Section*/
 .quality-section i.fas{
     opacity: .5;
+}
+
+.channel-section{
+    background:repeating-linear-gradient(to right, #aeccf3d5, #d4eeffd3),
+     url("https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+     background-position: center;
+     
+   
 }
