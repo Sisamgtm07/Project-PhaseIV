@@ -51,3 +51,19 @@ body{
     padding: 8px;
     border-radius: 50px;
 }
+
+
+/*About Us*/
+.main_heading,
+.quality-section{
+    background: #d1cde934;
+}
+
+hr.light {
+    border-color:black;
+}
+
+hr.divider {
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+}
