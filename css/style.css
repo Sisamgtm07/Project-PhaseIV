@@ -92,3 +92,9 @@ hr.divider {
     max-width: 3.25rem;
     border-width: 0.2rem;
 }
+
+
+/*Quality Section*/
+.quality-section i.fas{
+    opacity: .5;
+}
