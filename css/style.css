@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+/*Navigation Menu*/
+.navbar-brand img{
+    width: 10%;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #212529;
+    font-weight: 500;
+}
+
+.fixed-top.scrolled {
+    background-color: rgb(222, 224, 230) !important;
+    transition: background-color 200ms linear;
+  }
