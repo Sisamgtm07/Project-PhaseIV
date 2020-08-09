@@ -52,6 +52,19 @@ body{
     border-radius: 50px;
 }
 
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-header img{
+    width: 5%;
+}
+.modal-body{
+ background-image: repeating-linear-gradient(to right, #206DD4, #0099ff5b);
+ padding-right: 30px;
+}
+
+
 
 /*About Us*/
 .main_heading,
