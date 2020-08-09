@@ -7,6 +7,8 @@
 body{
     overflow-x: hidden;
 }
+
+
 /*Navigation Menu*/
 .navbar-brand img{
     width: 10%;
@@ -20,3 +22,32 @@ body{
     background-color: rgb(222, 224, 230) !important;
     transition: background-color 200ms linear;
   }
+
+
+  /*Hero Section*/
+  .masthead {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(223, 143, 219, 0.233) 0%, rgba(247, 182, 241, 0.233) 100%), 
+                url("../img/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-caption i.fa-facebook{
+    background-color: #3b5998;
+    color:#fff ;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.carousel-caption i.fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.carousel-caption i.fa-linkedin-in{
+    background-color:  #0e76a8;
+    padding: 8px;
+    border-radius: 50px;
+}
