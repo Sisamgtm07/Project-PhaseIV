@@ -64,6 +64,18 @@ body{
  padding-right: 30px;
 }
 
+.register-item{
+ 
+    background: white;
+}
+.register-info img{
+    width: 30%;
+}
+
+.login-section{
+    background-image: repeating-linear-gradient(to right, #206DD4, #0099ff5b);
+}
+
 
 
 /*About Us*/
