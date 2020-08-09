@@ -67,6 +67,119 @@
 
                 </p>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="./img/logo.png" alt="Logo">
+                            <h5 class="modal-title pl-3" id="exampleModalLongTitle">"Connecting Innovators"</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!--Modal Body-->
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-5 register-info">
+                                    <img src="./img/rocket.png" alt="Rocket">
+                                    <h3>Join Us</h3>
+                                    <p>
+                                        While you might strive to learn as much as you can about the world,
+                                        it is impossible to know everything.And more
+                                        importantly, you should be humble enough to look back at your
+                                        mistakes (and challenges) to evaluate the lessons that you learned
+                                        from them.
+                                    </p>
+                                </div>
+                                <div class="col-lg-7 register-item">
+                                    <h3 class="mt-3">Apply as Trainee</h3>
+                                    <form action="./php/login.php" method="POST">
+                                         <div class="form-group">
+                                            <label for="exampleInputUsername">Username</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Username">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Password">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary mb-3">Sign Up</button>
+                                        <p>
+
+                                            <a href="./php/loggedin.php" data-toggle="modal"
+                                                data-target="#loginModal">Already have an account?</a>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Login Modal-->
+
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-5 register-info py-5">
+                                    <img src="./img/rocket.png" alt="Rocket">
+                                    <h3>Good to see you again!</h3>
+                                    <p>
+                                        By logging into Learn N Share organization, you agree to our Terms of use(Opens
+                                        in a new window) and Privacy Policy.
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-7 register-item py-5">
+                                    <h3 class="mt-3">Join as Learner</h3>
+                                    <form action="./php/login.php" method="POST">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <br>
+                                            <a href="./php/loggedin.php" class="font-weight-bold forgot">Forgot
+                                                Password?</a>
+
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Password">
+
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mb-3">Log in</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
