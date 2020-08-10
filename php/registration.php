@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-header('location:../index.html');
+header('location:createprofile.php');
 $con = mysqli_connect('localhost', 'root' , '');
 
 mysqli_select_db($con, 'db_register');
