@@ -5,7 +5,7 @@ include 'conn.php';
 if (isset($_POST['done'])) {
 
     $id = $_GET['id'];
-    $image = $_GET['image'];
+    $image = $_POST['image'];
     $name = $_POST['name'];
     $channel = $_POST['channel'];
     $q = " update crudtable set id=$id, image='$image', name='$name', channel='$channel' where id=$id  ";
@@ -68,7 +68,7 @@ if (isset($_POST['done'])) {
     <div class="profilehead bg-light">
         <div class="container py-5 h-100">
             <div class="col-lg-6 m-auto">
-                <form method="post">
+                <form method="post" enctype='multipart/form-data'>
                     <br><br>
                     <div class="card p-1">
 
