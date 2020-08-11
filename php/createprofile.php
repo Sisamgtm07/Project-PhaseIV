@@ -4,11 +4,13 @@ include 'conn.php';
 session_start();
 
 if (isset($_POST['done'])) {
-    $image = $_POST['image'];
     $name = $_POST['name'];
     $channel = $_POST['channel'];
     $description = $_POST['description'];
-    $q = " INSERT INTO `crudtable`(`image`,`name`, `channel`, `description`) VALUES ('$image', '$name', '$channel' ,'$description' )";
+    $image = $_FILES['image']['name'];
+    $temp =$_FILES['image']['tmp_name'];
+    move_uploaded_file($temp,"../images/$image");
+    $q = " INSERT INTO `testcrudtable`(`image`,`name`, `channel`, `description`) VALUES ('$image', '$name', '$channel' ,'$description' )";
 
     $query = mysqli_query($con, $q);
     header('location:display.php');
@@ -65,7 +67,7 @@ if (isset($_POST['done'])) {
     <div class="profilehead bg-light">
         <div class="container py-5 h-100">
             <div class="col-lg-6 m-auto">
-                <form method="post">
+                <form method="post" enctype="multipart/form-data">
                     <br><br>
                     <div class="card p-1">
                         <div class="card-header bg-dark">
