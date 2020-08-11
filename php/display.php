@@ -61,8 +61,6 @@
  <table  id="tabledata" class=" table table-striped table-hover table-bordered">
  
  <tr class="bg-dark text-white text-center">
- 
- <th> Id </th>
  <th> Image </th>
  <th> Name </th>
  <th> Channel</th>
@@ -82,7 +80,6 @@
  while($res = mysqli_fetch_array($query)){
  ?>
  <tr class="text-center">
- <td> <?php echo $res['id'];  ?> </td>
  <td> <?php echo $res['image'];  ?> </td>
  <td> <?php echo $res['name'];  ?> </td>
  <td> <?php echo $res['channel'];  ?> </td>
