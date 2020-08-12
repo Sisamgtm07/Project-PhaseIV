@@ -3,12 +3,15 @@
 include 'conn.php';
 
 if (isset($_POST['done'])) {
-
     $id = $_GET['id'];
-    $image = $_POST['image'];
     $name = $_POST['name'];
     $channel = $_POST['channel'];
-    $q = " update crudtable set id=$id, image='$image', name='$name', channel='$channel' where id=$id  ";
+    $description = $_POST['description'];
+    $image = $_FILES['image']['name'];
+    $temp =$_FILES['image']['tmp_name'];
+    move_uploaded_file($temp,"../images/$image");
+
+    $q = " update testcrudtable set id=$id, image='$image', name='$name', channel='$channel', description='$description' where id=$id  ";
 
     $query = mysqli_query($con, $q);
 
