@@ -29,7 +29,7 @@
 </head>
 <body>
  <!--Navigation Menu-->
-   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1 " id="mainNav">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light py-1 " id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="../index.html">
                 <img src="../img/logo.png" alt="Logo">
@@ -55,7 +55,7 @@
  <div class="container">
  <div class="col-lg-12">
  <br><br>
- <h1 class=" display-4 text-center mt-5" > Profile Info </h1>
+ <h1 class=" display-4 text-center" > Profile Info </h1>
  <hr class=" divider mx-auto" />
  <br>
  <table  id="tabledata" class=" table table-striped table-hover table-bordered">
@@ -73,14 +73,14 @@
  <?php
 
  include 'conn.php'; 
- $q = "select * from crudtable ";
+ $q = "select * from testcrudtable ";
 
  $query = mysqli_query($con,$q);
 
  while($res = mysqli_fetch_array($query)){
  ?>
  <tr class="text-center">
- <td> <?php echo $res['image'];  ?> </td>
+ <td><img src="../images/<?php echo $res['image'];?>" style="width:20%"></td>
  <td> <?php echo $res['name'];  ?> </td>
  <td> <?php echo $res['channel'];  ?> </td>
  <td> <?php echo $res['description'];  ?> </td>
